@@ -1,0 +1,52 @@
+/*header style*/
+.navbar-brand {
+	color: black;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.navbar-customclass {
+	background-color: yellow;
+}
+
+.nav-link {
+	color: black;
+}
+/*main page content*/
+
+body {
+	font-family: 'Urbanist', sans-serif;
+}
+
+#menu_chicken {
+	background-color: dimgrey;
+    padding: 20px;
+    margin-top: 15px;
+   font-family: 'Urbanist', sans-serif;
+    border:  1px solid black;
+    font-size: 1em;
+}
+
+#menu_beef {
+	background-color: dimgrey;
+    padding: 20px;
+    margin-top: 15px;
+   font-family: 'Urbanist', sans-serif;
+    border:  1px solid black;
+    font-size: 1em;
+}
+#menu_sushi {
+	background-color: dimgrey;
+    padding: 20px;
+    margin-top: 15px;
+   font-family: 'Urbanist', sans-serif;
+    border:  1px solid black;
+    font-size: 1em;
+}
+
+#menu-header {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+
