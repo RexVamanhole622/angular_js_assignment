@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app = 'ShoppingListCheckOff'>
+  <head>
+    <title>Shopping List Check Off</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script src='angular.min.js'></script>
+    <script src="assignment_2.js"></script>
+    <style>
+      .emptyMessage {
+        font-weight: bold;
+        color: red;
+        font-size: 1.2em;
+      }
+      li {
+        margin-bottom: 7px;
+        font-size: 1.2em;
+      }
+      li > button {
+        margin-left: 6px;
+      }
+      button > span {
+        color: green;
+      }
+    </style>
+  </head>
+<body>
+  <div class="container">
+  <h1>Shopping List Check Off</h1>
+
+  <div class="row">
+
+    <!-- To Buy List -->
+    <div ng-controller='ToBuyController as buyItem' class="col-md-6">
+     <h2>To Buy:</h2>
+     <ul>
+       <li ng-repeat = "list in buyItem.shoppingList"> 
+         {{ list.itemQuantity }} of {{ list.itemName }} 
+         <button ng-click="buyItem.buy($index)" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+     
+     </ul>
+     <div ng-if="buyItem.shoppingList.length == 0" class="emptyMessage">Everything is bought!</div>
+     <!--ng-if to made this mgs disapper-->
+    </div>
+
+    <!-- Already Bought List -->
+    <div ng-controller = 'AlreadyBoughtController as boughtItem'class="col-md-6">
+     <h2>Already Bought:</h2>
+     <ul>
+       <li ng-repeat = 'list in boughtItem.alreadyBoughtList'>
+        {{ list.itemQuantity }} of {{ list.itemName }}</li>
+     </ul>
+     <div ng-show="boughtItem.alreadyBoughtList.length == 0" class="emptyMessage">Nothing bought yet.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
