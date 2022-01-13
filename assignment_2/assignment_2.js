@@ -23,6 +23,7 @@ AlreadyBoughtController.$inject = ['ShoppingListCheckOffService'];
 function AlreadyBoughtController (ShoppingListCheckOffService) {
 var boughtItem = this;
 boughtItem.alreadyBoughtList = ShoppingListCheckOffService.getBoughtItem ();
+
 }
 
 
@@ -44,6 +45,12 @@ function ShoppingListCheckOffService () {
         shoppingList.splice(itemIndex, 1)
     };
     
+    //prototype syntax:
+    //$scope.moveToListB = function () {
+    //     $scope.listB.push(item);
+    //     $scope.listA.splice($scope.listA.indexOf(item), 1);
+    // }
+    
         service.getToBuyItems = function () {
             return shoppingList;
         };
@@ -52,10 +59,7 @@ function ShoppingListCheckOffService () {
             return alreadyBoughtList;
         };
 
-        
-        
-       
-
+        //console.log(shoppingList);
 };
 
 
