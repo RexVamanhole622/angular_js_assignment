@@ -55,7 +55,7 @@
 
     service.getMatchedMenuItems = function (searchTerm) {
       return $http({
-        method: "GET",
+        method: "require",
         url: (ApiBasePath + "/menu_items.json"),
       }).then(function (result) {
 
