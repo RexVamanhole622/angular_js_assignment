@@ -5,11 +5,11 @@
   .controller('NarrowItDownController', NarrowItDownController)
   .service('MenuSearchService', MenuSearchService)
   .constant('ApiBasePath', "https://davids-restaurant.herokuapp.com")
-  .directive('foundItems', FoundItems);
+  .directive('founiItems', FoundItems);
 
   function FoundItems() {
     var ddo = {
-      template: 'founditems.html',
+      templateUrl: 'founditems.html',
       restrict: "E",
       scope: {
         items: '<',
