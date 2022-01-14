@@ -22,9 +22,9 @@
     <ol>
       <ul ng-repeat='item in items'>
       <br>
-        Name: {{items.name}} <br>
-        Short Name: {{items.short_name}} <br>
-        Description: {{items.description}} <br> 
+        Name: {{item.name}} <br>
+        Short Name: {{item.short_name}} <br>
+        Description: {{item.description}} <br> 
         <button ng-click='onRemove({index: $index})'>Don't want this one!</button>
       </ul>
     </ol>
