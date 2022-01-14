@@ -9,7 +9,7 @@
 
   function FoundItems() {
     var ddo = {
-      templateUrl: 'founditems.html',
+      template: 'founditems.html',
       restrict: "E",
       scope: {
         items: '<',
