@@ -5,7 +5,7 @@
   .controller('NarrowItDownController', NarrowItDownController)
   .service('MenuSearchService', MenuSearchService)
   .constant('ApiBasePath', "https://davids-restaurant.herokuapp.com")
-  .directive('founiItems', FoundItems);
+  .directive('founditems', FoundItems);
 
   function FoundItems() {
     var ddo = {
@@ -55,7 +55,7 @@
 
     service.getMatchedMenuItems = function (searchTerm) {
       return $http({
-        method: "require",
+        method: "GET",
         url: (ApiBasePath + "/menu_items.json"),
       }).then(function (result) {
 
