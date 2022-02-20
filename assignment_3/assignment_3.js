@@ -63,10 +63,11 @@
         var items = result.data.menu_items;
         var foundItems = []
         for (var index = 0; index < items.length; index++) {
-          if (items[index].description.indexOf(searchTerm) != -1) {
+          if (items[index].description.indexOf(searchTerm) != -1) { //searchTerm linked to input in parent, key role to detect the data 
+                                                                    // we looking for 
             foundItems.push(items[index]);
           }
-        }
+        };
 
         // return processed items
         return foundItems;
