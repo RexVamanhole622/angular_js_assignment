@@ -3,31 +3,29 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Chinese Restaurant</title>
+    <title>Restaurant Menu</title>
   </head>
   <body>
-    <h1>Welcome to our Restaurant!!</h1>
+    <h1>Welcome To My Restaurant !</h1>
 
-<ui-view></ui-view>
-  <!-- Libraries -->
-  <script src="lib/angular.min.js"></script>
-  <script src="lib/angular-ui-router.min.js"></script>
+    <ui-view></ui-view>
 
-  <!-- modules -->
-  <script src="src/menuapp/menuapp.module.js"></script>
-  <script src="src/menuapp/data.module.js"></script>
-  
-  <!-- Routes -->
-  <script src="src/routes.js"></script>
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
 
+    <!-- Modules -->
+    <script src="src/menuapp/menuapp.module.js"></script>
+    <script src="src/data/data.module.js"></script>
 
-  <!-- Menu module artifacts -->
-  <script src="src/menuapp/categories.component.js"></script>
-  <script src="src/menuapp/items.component.js"></script>
-  <script src="src/menuapp/categories.controller.js"></script>
-  <script src="src/menuapp/items.controller.js"></script>
-  <script src="src/menuapp/menudata.service.js"></script>
-  
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
 
-</body>
-  </html>
+    <script src="src/menuapp/categories.component.js"></script>
+    <script src="src/menuapp/items.component.js"></script>
+    <script src="src/menuapp/category-list.controller.js"></script>
+    <script src="src/menuapp/items.controller.js"></script>
+    <script src="src/data/menudata.service.js"></script>
+
+  </body>
+</html>
